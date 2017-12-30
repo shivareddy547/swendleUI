@@ -28,9 +28,12 @@
     "@angular/platform-browser": "4.3.x ||^2.0.0",
     "@angular/platform-browser-dynamic": "4.3.x ||^2.0.0",
     "@angular/router": "4.3.x ||^2.0.0",
+      "@angular/cli": "1.2.6",
+      "@angular/compiler-cli": "^4.0.0",
     "@ng-bootstrap/ng-bootstrap": "1.0.0-alpha.30",
     "angular-bootstrap-md": "*",
     "angular2-jwt-session": "^0.1.2",
+
     "classlist.js": "1.1.x",
     "core-js": "2.4.x",
     "del": "3.0.x",
