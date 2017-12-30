@@ -13,7 +13,8 @@
     "build:pro": "ngm build -p src/app/typescripts/pro --clean && gulp only-pro && gulp startPro",
     "build:all": "npm run build:free && npm run build:pro",
     "aot:build": "ng build --prod --sm=false --aot=true --output-path=dist",
-    "pre-commit": "ng lint"
+    "pre-commit": "ng lint",
+    "postinstall": "ng build --aot -prod"
   },
   "private": true,
   "dependencies": {
@@ -33,6 +34,7 @@
     "classlist.js": "1.1.x",
     "core-js": "2.4.x",
     "del": "3.0.x",
+    "express": "^4.16.2",
     "font-awesome": "4.7.x",
     "gulp": "^3.9.1",
     "gulp-rename": "1.2.x",
@@ -43,6 +45,7 @@
     "rxjs": "5.3.x",
     "screenfull": "3.3.x",
     "smoothscroll-polyfill": "0.3.x",
+    "typescript": "~2.2.0",
     "web-animations-js": "2.3.x",
     "zone.js": "0.8.x"
   },
@@ -52,6 +55,7 @@
     "@types/jasmine": "2.5.38",
     "@types/node": "~6.0.85",
     "codelyzer": "~2.0.0",
+    "enhanced-resolve": "^3.3.0",
     "jasmine-core": "~2.5.2",
     "jasmine-spec-reporter": "~3.2.0",
     "karma": "~1.4.1",
@@ -64,6 +68,10 @@
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",
     "typescript": "~2.2.0"
+  },
+  "engines": {
+    "node": "6.11.3",
+    "npm": "3.10.10"
   },
   "description": "Material Design for Bootstrap - Angular",
   "main": "gulpfile.js",
